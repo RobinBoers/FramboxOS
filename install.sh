@@ -18,6 +18,7 @@ sudo cp -f /home/pi/Frambox/.bashrc /home/pi/.bashrc
 sudo cp -f /home/pi/Frambox/splashscreen.list /etc/splashscreen.list
 sudo cp -f /home/pi/Frambox/splashscreen.cfg /opt/retropie/configs/all/splashscreen.cfg
 sudo cp -f /home/pi/Frambox/startes.sh /home/pi/startes.sh
+sudo cp -f /home/pi/Frambox/lxterminal.conf /home/pi/.config/lxterminal/lxterminal.conf
 
 echo "Enabling SSH..."
 sudo systemctl enable ssh
