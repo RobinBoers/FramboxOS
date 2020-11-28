@@ -1,9 +1,9 @@
 #!/bin/bash
 
 echo "Installing requierd packages..."
-sudo apt install minecraft-pi
-sudo apt install hping3
-sudo apt install nmap
+sudo apt-get install -y minecraft-pi
+sudo apt-get install -y hping3
+sudo apt-get install -y nmap
 sudo apt-get install -y python-wxgtk3.0
 sudo apt-get install -y matchbox-keyboard
 
