@@ -17,8 +17,9 @@ sudo cp -f /home/pi/Frambox/.bashrc /home/pi/.bashrc
 sudo cp -f /home/pi/Frambox/splashscreen.list /etc/splashscreen.list
 sudo cp -f /home/pi/Frambox/startes.sh /home/pi/startes.sh
 
-echo "Setting up static IP..."
+echo "Setting up static IP and hostname..."
 sudo cp -f /home/pi/Frambox/dhcpcd.conf /etc/dhcpcd.conf
+sudo cp -f /home/pi/Frambox/hostname /etc/hostname
 
 echo "Installing gamelists and ports..."
 sudo cp -R -f /home/pi/Frambox/roms/ /home/pi/RetroPie/roms/
