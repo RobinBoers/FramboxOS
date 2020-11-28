@@ -20,10 +20,8 @@ It also installs:
 - Install vice from RetroPie Setup -> Manage Packages -> Optional Packages -> vice -> Install
 - Enter terminal (with F4)
 
-- ~~~wget <https://raw.githubusercontent.com/RobinBoers/FramboxOS/main/install.sh>~~~
-
-- ~~~sudo chmod 777 install.sh && sudo chmod a+x install.sh~~~
-
-- ~~~sudo ./install.sh~~~
+~~~ wget <https://raw.githubusercontent.com/RobinBoers/FramboxOS/main/install.sh>\n
+sudo chmod 777 install.sh && sudo chmod a+x install.sh\n
+sudo ./install.sh ~~~
 
 - Reboot
