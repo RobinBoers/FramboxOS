@@ -29,6 +29,7 @@ sudo systemctl enable ssh
 echo "Setting up static IP and hostname..."
 sudo cp -f /home/pi/Frambox/dhcpcd.conf /etc/dhcpcd.conf
 sudo cp -f /home/pi/Frambox/hostname /etc/hostname
+sudo cp -f /home/pi/Frambox/hosts /etc/hosts
 
 echo "Installing gamelists and ports..."
 sudo cp -R -f /home/pi/Frambox/roms/ /home/pi/RetroPie/
