@@ -17,7 +17,7 @@ It also installs:
 - Install PIXEL from RetroPie Setup -> Configuration / Tools -> Raspbian Tools -> Install desktop
 - Download retropie-extra splashscreens from RetroPie Setup -> splashscreen -> Download RetroPie-Extra splashscreens
 - Install vice from RetroPie Setup -> Manage Packages -> Optional Packages -> vice -> Install
-- Install DOSBox RetroPie Setup -> Manage Packages -> Optional Packages -> dosbox -> Install
+- Install DOSBox from RetroPie Setup -> Manage Packages -> Optional Packages -> dosbox -> Install
 - Enter terminal (with F4)
 - <code>wget https://raw.githubusercontent.com/RobinBoers/FramboxOS/master/install.sh</code>
 - <code>sudo chmod 777 install.sh && sudo chmod a+x install.sh</code>
