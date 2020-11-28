@@ -19,7 +19,11 @@ It also installs:
 - Install PIXEL desktop from RetroPie Setup -> Configuration / Tools -> Raspbian Tools -> Install desktop
 - Install vice from RetroPie Setup -> Manage Packages -> Optional Packages -> vice -> Install
 - Enter terminal (with F4)
-- <code>wget https://raw.githubusercontent.com/RobinBoers/FramboxOS/main/install.sh</code>
-- <code>sudo chmod 777 install.sh && sudo chmod a+x install.sh</code>
-- <code>sudo ./install.sh</code>
+
+- ~~~wget <https://raw.githubusercontent.com/RobinBoers/FramboxOS/main/install.sh>~~~
+
+- ~~~sudo chmod 777 install.sh && sudo chmod a+x install.sh~~~
+
+- ~~~sudo ./install.sh~~~
+
 - Reboot
