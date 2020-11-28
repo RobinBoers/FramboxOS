@@ -9,6 +9,7 @@ sudo apt-get install -y python3 idle3
 sudo apt-get install -y python3-pip
 sudo /home/pi/Frambox/install_pixel.sh
 sudo apt-get install -y minecraft-pi
+sudo apt-get install -y sonic-pi
 sudo apt-get install -y hping3
 sudo apt-get install -y nmap
 sudo apt-get install -y python-wxgtk3.0
