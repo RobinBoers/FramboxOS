@@ -78,7 +78,7 @@
 		<path>./Desktop.sh</path>
 		<name>Raspbian</name>
 		<desc>Raspbian is a Debian-based operating system for Raspberry Pi. Since 2015 it has been oficialy provided by the Raspberry Pi Foundation as the primary operating system for the Raspberry Pi family of compact single-board computers.</desc>
-		<image>~/Frambox/EmuImages/Desktop-image.png</image>
+		<image>~/Frambox/EmuImages/debian-logo.png</image>
 		<releasedate>20151017T000000</releasedate>
 		<developer>Raspberry Pi Foundation</developer>
 		<publisher>Raspberry Pi Foundation</publisher>
