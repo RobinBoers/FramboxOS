@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<gameList>
+	<game>
+		<path>./+Start DOSBox.sh</path>
+		<name>Master</name>
+		<desc>Start the emulator without any roms. Very useful for programming.</desc>
+		<playcount>1</playcount>
+		<lastplayed>20201119T195549</lastplayed>
+	</game>
+</gameList>
