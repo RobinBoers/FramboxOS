@@ -9,7 +9,7 @@ sudo apt-get install -y nmap
 sudo apt-get install -y python-wxgtk3.0
 sudo apt-get install -y matchbox-keyboard
 
-echo "Cloning repo..."
+echo "Cloning repos..."
 git clone  https://github.com/RobinBoers/FramboxOS /home/pi/Frambox
 git clone --recursive --depth 1 --branch master https://github.com/HerbFargus/retropie-splashscreens-extra /home/pi/RetroPie/splashscreens/retropie-extra
 
