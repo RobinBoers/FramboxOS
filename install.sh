@@ -19,6 +19,10 @@ sudo cp -f /home/pi/Frambox/splashscreen.list /etc/splashscreen.list
 sudo cp -f /home/pi/Frambox/splashscreen.cfg /opt/retropie/configs/all/splashscreen.cfg
 sudo cp -f /home/pi/Frambox/startes.sh /home/pi/startes.sh
 
+echo "Enabling SSH..."
+sudo systemctl enable ssh
+# sudo cp -f /home/pi/Frambox/ssh /boot/ssh
+
 echo "Setting up static IP and hostname..."
 sudo cp -f /home/pi/Frambox/dhcpcd.conf /etc/dhcpcd.conf
 sudo cp -f /home/pi/Frambox/hostname /etc/hostname

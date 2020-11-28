@@ -7,6 +7,7 @@ It includes:
 - My favorite splashscreens
 - A option to open MCPI and Vice BASIC from emulationtation
 - Custom hostname
+- Enable SSH
 - Editted Raspbian menu
 
 It also installs:
