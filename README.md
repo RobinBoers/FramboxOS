@@ -6,18 +6,18 @@ It includes:
 - A custom bashwelcometweak
 - My favorite splashscreens
 - A option to open MCPI and Vice BASIC from emulationtation
+- Custom hostname
+- Editted Raspbian menu
 
 It also installs:
 
-- Minecraft Pi, nmap, hping3, python pip
+- Minecraft Pi, nmap, hping3, Python pip + IDLE, matchbox-keyboard
 
 ## Installation
 
 - Start with a fresh RetroPie image
-- Install PIXEL from RetroPie Setup -> Configuration / Tools -> Raspbian Tools -> Install desktop
-- Install linapple from RetroPie Setup -> Manage Packages -> Optional Packages -> linapple -> Install
+- Install PIXEL desktop from RetroPie Setup -> Configuration / Tools -> Raspbian Tools -> Install desktop
 - Install vice from RetroPie Setup -> Manage Packages -> Optional Packages -> vice -> Install
-- Install DOSBox from RetroPie Setup -> Manage Packages -> Optional Packages -> dosbox -> Install
 - Enter terminal (with F4)
 - <code>wget https://raw.githubusercontent.com/RobinBoers/FramboxOS/main/install.sh</code>
 - <code>sudo chmod 777 install.sh && sudo chmod a+x install.sh</code>
