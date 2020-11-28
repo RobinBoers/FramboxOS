@@ -10,4 +10,4 @@ X-MultipleArgs=false
 Type=Application
 Categories=GTK;Utility;TerminalEmulator;
 TryExec=gksu
-NoDisplay=true
+NoDisplay=false

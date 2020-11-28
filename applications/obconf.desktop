@@ -29,4 +29,4 @@ Categories=Settings;DesktopSettings;GTK;
 MimeType=application/x-openbox-theme;
 StartupNotify=true
 Terminal=false
-NoDisplay=true
+NoDisplay=false

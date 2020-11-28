@@ -6,4 +6,4 @@ Exec=lxkeymap
 Icon=/usr/share/lxkeymap/media/icon.png
 Terminal=false
 Type=Application
-NoDisplay=false
+NoDisplay=true
