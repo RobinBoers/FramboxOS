@@ -11,6 +11,7 @@ sudo apt-get install -y matchbox-keyboard
 
 echo "Cloning repo..."
 git clone  https://github.com/RobinBoers/FramboxOS /home/pi/Frambox
+git clone --recursive --depth 1 --branch master https://github.com/HerbFargus/retropie-splashscreens-extra /home/pi/RetroPie/splashscreens/retropie-extra
 
 echo "Copying files..."
 sudo cp -f /home/pi/Frambox/.bashrc /home/pi/.bashrc
