@@ -9,6 +9,7 @@ It includes:
 - Custom hostname
 - Enable SSH
 - Editted Raspbian menu
+- Terminal configuration / preferences
 
 It also installs:
 
