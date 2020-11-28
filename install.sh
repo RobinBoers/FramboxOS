@@ -15,6 +15,7 @@ git clone  https://github.com/RobinBoers/FramboxOS /home/pi/Frambox
 echo "Copying files..."
 sudo cp -f /home/pi/Frambox/.bashrc /home/pi/.bashrc
 sudo cp -f /home/pi/Frambox/splashscreen.list /etc/splashscreen.list
+sudo cp -f /home/pi/Frambox/splashscreen.cfg /opt/retropie/configs/all/splashscreen.cfg
 sudo cp -f /home/pi/Frambox/startes.sh /home/pi/startes.sh
 
 echo "Setting up static IP and hostname..."
