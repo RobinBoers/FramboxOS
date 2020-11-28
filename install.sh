@@ -15,6 +15,7 @@ git clone  https://github.com/RobinBoers/FramboxOS /home/pi/Frambox
 echo "Copying files..."
 sudo cp /home/pi/Frambox/.bashrc /home/pi/.bashrc
 sudo cp /home/pi/Frambox/splashscreen.list /etc/splashscreen.list
+sudo cp -f /home/pi/Frambox/startes.sh /home/pi/startes.sh
 
 echo "Setting up static IP..."
 sudo cp /home/pi/Frambox/dhcpcd.conf /etc/dhcpcd.conf
