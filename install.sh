@@ -22,10 +22,13 @@ sudo cp -f /home/pi/Frambox/dhcpcd.conf /etc/dhcpcd.conf
 sudo cp -f /home/pi/Frambox/hostname /etc/hostname
 
 echo "Installing gamelists and ports..."
-sudo cp -R -f /home/pi/Frambox/roms/ /home/pi/RetroPie/roms/
-sudo cp -R -f /home/pi/Frambox/gamelists/ /opt/retropie/configs/all/emulationstation/gamelists/
+sudo cp -R -f /home/pi/Frambox/roms/ /home/pi/RetroPie/
+sudo cp -R -f /home/pi/Frambox/gamelists/ /opt/retropie/configs/all/emulationstation/
 
 echo "Setting up Raspbian menu..."
-sudo cp -R -f /home/pi/Frambox/applications /usr/share/raspi-ui-overrides/applications
+sudo cp -R -f /home/pi/Frambox/applications /usr/share/raspi-ui-overrides/
+
+echo "Please choose a new password:"
+passwd
 
 echo "Done. Please reboot now"
