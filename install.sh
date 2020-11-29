@@ -15,6 +15,9 @@ sudo apt-get install -y nmap
 sudo apt-get install -y python-wxgtk3.0
 sudo apt-get install -y matchbox-keyboard
 
+echo "Installing themes..."
+sudo /home/pi/Frambox/install_themes.sh
+
 echo "Copying files..."
 sudo cp -f /home/pi/Frambox/.bashrc /home/pi/.bashrc
 sudo cp -f /home/pi/Frambox/splashscreen.list /etc/splashscreen.list

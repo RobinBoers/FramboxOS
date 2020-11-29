@@ -1,11 +1,12 @@
 # FramboxOS
 
-This script automatticly installs things I need in RetroPie. This makes it easier to get everything running after a chrash / fresh start. It's mainly for personal use only, but I tought I would share it on github.<br><br>
+This script helps me to setup the my Raspberry Pi. It installs all the programs I use and sets all my preferences.<br><br>This is made for use with RetroPie.<br><br>
 It includes:
 
 - The PIXEL desktop
 - A custom bashwelcometweak
 - My favorite splashscreens
+- My favorite themes
 - A option to open MCPI and Vice BASIC from emulationtation
 - Custom hostname
 - Enable SSH
@@ -20,7 +21,7 @@ It also installs:
 
 - Start with a fresh RetroPie image
 - Install vice from RetroPie Setup -> Manage Packages -> Optional Packages -> vice -> Install
-- Enter terminal (with F4)
+- If you are in Emulationstation, enter the terminal (with F4)
 
 ```bash
 wget https://raw.githubusercontent.com/RobinBoers/FramboxOS/main/install.sh
