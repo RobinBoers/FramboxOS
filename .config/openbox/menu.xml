@@ -63,12 +63,12 @@
 		</item>
 		<item label="Reboot">
 			<action name="Execute">
-				<execute>reboot</execute>
+				<execute>sudo reboot</execute>
 			</action>
 		</item>
 		<item label="Shutdown">
 			<action name="Execute">
-				<execute>shutdown now</execute>
+				<execute>sudo shutdown now</execute>
 			</action>
 		</item>
 	</menu>
