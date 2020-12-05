@@ -38,12 +38,21 @@ then
   sudo apt-get update
   sudo apt-get upgrade
 
-  sudo apt-get install -y --no-install-recommends xorg xinit
+  sudo apt-get install -y lightdm
 
-  sudo apt-get install -y openbox obconf
+  sudo apt-get install -y openbox obconf openbox-menu obmenu
+  sudo apt-get install -y gedit
+  sudo apt-get install -y lxterminal
   sudo apt-get install -y xfce4-notifyd
   sudo apt-get install -y tint2
   # sudo apt-get install -y xcompmgr cairo-dock
+  sudo apt-get install -y pcmanfm
+  sudo apt-get install -y lxappearance
+  sudo apt-get install -y nitrogen
+  sudo apt-get install -y xcompmgr
+
+  sudo cp -R -f /home/pi/Frambox/.config/ /home/pi/
+  sudo cp -f /home/pi/Frambox/autostart_openbox.sh /home/pi/.config/openbox/autostart.sh
 
 fi
 
@@ -51,15 +60,14 @@ sudo apt-get install -y minecraft-pi
 sudo apt-get install -y sonic-pi
 sudo apt-get install -y hping3
 sudo apt-get install -y nmap
+sudo apt-get install -y firefox-esr
 sudo apt-get install -y python-wxgtk3.0
 sudo apt-get install -y matchbox-keyboard
 
 echo "Installing themes..."
 
 # Install Emulationstation themes trough GUI
-dialog --title "Themes" --msgbox "Do you want \ to install ES themes? \
-\ press <Enter> \ to install or \
-<Esc> to cancel." 10 50
+dialog --title "Themes" --msgbox "Do you want to install ES themes? Press <Enter> to install or <Esc> to cancel." 10 50
 # Return status of non-zero indicates cancel
 if [ "$?" != "0" ]
 then
@@ -70,15 +78,15 @@ else
   sleep 2
 
   mkdir -p "/etc/emulationstation/themes"
-  git clone "/etc/emulationstation/themes/simple" "https://github.com/RetroPie/es-theme-simple.git"
-  git clone "/etc/emulationstation/themes/pixel" "https://github.com/ehettervik/es-theme-pixel.git"
-  git clone "/etc/emulationstation/themes/workbench" "https://github.com/ehettervik/es-theme-workbench.git"
-  git clone "/etc/emulationstation/themes/io" "https://github.com/mattrixk/es-theme-io.git"
-  git clone "/etc/emulationstation/themes/tronkyfran" "https://github.com/HerbFargus/es-theme-tronkyfran.git"
-  git clone "/etc/emulationstation/themes/minimal" "https://github.com/lilbud/es-theme-minimal.git"
-  git clone "/etc/emulationstation/themes/snes-mini" "https://github.com/ruckage/es-theme-snes-mini.git"
-  git clone "/etc/emulationstation/themes/Chicuelo" "https://github.com/chicueloarcade/es-theme-Chicuelo.git"
-  git clone "/etc/emulationstation/themes/pii-wii" "https://github.com/waweedman/es-theme-pii-wii.git"
+  git clone https://github.com/RetroPie/es-theme-simple.git /etc/emulationstation/themes/simple
+  git clone https://github.com/ehettervik/es-theme-pixel.git /etc/emulationstation/themes/pixel
+  git clone https://github.com/ehettervik/es-theme-workbench.git /etc/emulationstation/themes/workbench
+  git clone https://github.com/mattrixk/es-theme-io.git /etc/emulationstation/themes/io
+  git clone https://github.com/HerbFargus/es-theme-tronkyfran.git /etc/emulationstation/themes/tronkyfran
+  git clone https://github.com/lilbud/es-theme-minimal.git /etc/emulationstation/themes/minimal
+  git clone https://github.com/ruckage/es-theme-snes-mini.git /etc/emulationstation/themes/snes-mini
+  git clone https://github.com/chicueloarcade/es-theme-Chicuelo.git /etc/emulationstation/themes/Chicuelo
+  git clone https://github.com/waweedman/es-theme-pii-wii.git /etc/emulationstation/themes/pii-wii
   
 fi
 
@@ -89,6 +97,10 @@ sudo cp -f /home/pi/Frambox/splashscreen.cfg /opt/retropie/configs/all/splashscr
 sudo cp -f /home/pi/Frambox/startes.sh /home/pi/startes.sh
 sudo cp -f /home/pi/Frambox/lxterminal.conf /home/pi/.config/lxterminal/lxterminal.conf
 
+echo "Installing gamelists and ports..."
+sudo cp -R -f /home/pi/Frambox/roms/ /home/pi/RetroPie/
+sudo cp -R -f /home/pi/Frambox/gamelists/ /opt/retropie/configs/all/emulationstation/
+
 echo "Enabling SSH..."
 sudo systemctl enable ssh
 # sudo cp -f /home/pi/Frambox/ssh /boot/ssh
@@ -96,11 +108,6 @@ sudo systemctl enable ssh
 echo "Setting up static IP and hostname..."
 sudo cp -f /home/pi/Frambox/dhcpcd.conf /etc/dhcpcd.conf
 sudo cp -f /home/pi/Frambox/hostname /etc/hostname
-sudo cp -f /home/pi/Frambox/hosts /etc/hosts
-
-echo "Installing gamelists and ports..."
-sudo cp -R -f /home/pi/Frambox/roms/ /home/pi/RetroPie/
-sudo cp -R -f /home/pi/Frambox/gamelists/ /opt/retropie/configs/all/emulationstation/
 
 echo "Setting up Raspbian menu..."
 sudo cp -R -f /home/pi/Frambox/applications /usr/share/raspi-ui-overrides/
@@ -108,4 +115,5 @@ sudo cp -R -f /home/pi/Frambox/applications /usr/share/raspi-ui-overrides/
 echo "Please choose a new password:"
 passwd
 
+sudo cp -f /home/pi/Frambox/hosts /etc/hosts
 echo "Done. Please reboot now"
