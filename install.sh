@@ -7,7 +7,8 @@ git clone --recursive --depth 1 --branch master https://github.com/HerbFargus/re
 echo "Installing requierd packages..."
 sudo apt-get install -y python3 idle3
 sudo apt-get install -y python3-pip
-sudo /home/pi/Frambox/install_pixel.sh
+sudo apt-get install -y dialog
+sudo /home/pi/Frambox/dialog.sh
 sudo apt-get install -y minecraft-pi
 sudo apt-get install -y sonic-pi
 sudo apt-get install -y hping3
