@@ -3,10 +3,11 @@
 This script helps me to setup the my Raspberry Pi. It installs all the programs I use and sets all my preferences.<br><br>This is made for use with RetroPie.<br><br>
 It includes:
 
-- The PIXEL desktop
+- The PIXEL desktop (optional)
+- Custom Desktop Enviorment (optional)
 - A custom bashwelcometweak
 - My favorite splashscreens
-- My favorite themes
+- My favorite themes (optional)
 - A option to open MCPI and Vice BASIC from emulationtation
 - Custom hostname
 - Enable SSH
@@ -15,7 +16,18 @@ It includes:
 
 It also installs:
 
-- Minecraft Pi, nmap, hping3, Python pip + IDLE, sonic-pi, matchbox-keyboard
+Minecraft Pi, nmap, hping3, Python pip + IDLE, sonic-pi, matchbox-keyboard, firefox ESR
+
+The custom desktop uses:
+
+- lightdm
+- openbox
+- lxterminal
+- xfce4-notifyd (notifications)
+- tint2 (taskbar)
+- pcmanfm (file manager)
+- lxappearance
+- nitrogen (wallpapers)
 
 ## Installation
 
