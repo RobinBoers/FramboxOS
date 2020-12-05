@@ -27,5 +27,3 @@ then
   sudo /home/pi/Frambox/install_framdesktop.sh
 
 fi
-rm -f /tmp/ERRORS$$
-clear
