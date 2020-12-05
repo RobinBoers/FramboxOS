@@ -42,6 +42,11 @@
 				<execute>nitrogen</execute>
 			</action>
 		</item>
+		<item label="Appearance">
+			<action name="Execute">
+				<execute>lxappearance</execute>
+			</action>
+		</item>
 		<item label="Menu settings">
 			<action name="Execute">
 				<execute>obmenu</execute>
