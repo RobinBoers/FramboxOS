@@ -1,1 +1,3 @@
-tint2
+tint2 &
+nitrogen --restore &
+xcompmgr &
