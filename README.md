@@ -22,6 +22,7 @@ The custom desktop uses:
 
 - lightdm
 - openbox
+- gedit
 - lxterminal
 - xfce4-notifyd (notifications)
 - tint2 (taskbar)
