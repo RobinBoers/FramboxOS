@@ -42,6 +42,11 @@
 				<execute>tint2conf</execute>
 			</action>
 		</item>
+		<item label="Volume control">
+			<action name="Execute">
+				<execute>pavucontrol</execute>
+			</action>
+		</item>
 		<item label="Wallpaper settings">
 			<action name="Execute">
 				<execute>nitrogen</execute>

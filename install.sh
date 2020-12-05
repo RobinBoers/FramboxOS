@@ -50,6 +50,8 @@ then
   sudo apt-get install -y lxappearance
   sudo apt-get install -y nitrogen
   sudo apt-get install -y xcompmgr
+  sudo apt-get install -y pavucontrol
+  sudo apt-get install -y volti
 
   sudo cp -R -f /home/pi/Frambox/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
   sudo cp -R -f /home/pi/Frambox/.config/ /home/pi/
