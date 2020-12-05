@@ -56,6 +56,7 @@ then
 
 fi
 
+sudo apt-get install -y synaptic
 sudo apt-get install -y minecraft-pi
 sudo apt-get install -y sonic-pi
 sudo apt-get install -y hping3

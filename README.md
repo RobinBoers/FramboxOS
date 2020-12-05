@@ -16,7 +16,14 @@ It includes:
 
 It also installs:
 
-Minecraft Pi, nmap, hping3, Python pip + IDLE, sonic-pi, matchbox-keyboard, firefox ESR
+- Minecraft Pi
+- nmap
+- hping3
+- Python pip + IDLE
+- Sonic Pi
+- Matchbox Keyboard
+- Firefox ESR
+- Synaptic Package Manager
 
 The custom desktop uses:
 
