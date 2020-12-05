@@ -8,7 +8,7 @@
 		</item>
 		<item label="File Manager">
 			<action name="Execute">
-				<execute>sudo pcmanfm</execute>
+				<execute>pcmanfm</execute>
 			</action>
 		</item>
 		<item label="Web browser">
@@ -16,14 +16,19 @@
 				<execute>x-www-browser</execute>
 			</action>
 		</item>
-		<!-- This requires the presence of the 'openbox-menu' package to work -->
 		<menu id="/Debian"/>
+		<!-- This requires the presence of the 'openbox-menu' package to work -->
 		<separator/>
 		<menu execute="/usr/bin/obamenu" id="applications-menu" label="Applications"/>
 		<separator/>
 		<item label="Edit autostart">
 			<action name="Execute">
 				<execute>gedit /home/pi/.config/openbox/autostart.sh</execute>
+			</action>
+		</item>
+		<item label="File Manager (root)">
+			<action name="Execute">
+				<execute>sudo pcmanfm</execute>
 			</action>
 		</item>
 		<separator/>
