@@ -43,6 +43,7 @@ then
   sudo apt-get upgrade
 
   sudo apt-get install -y lightdm
+  sudo apt-get install -y xorg xinit
 
   sudo apt-get install -y openbox obconf openbox-menu obmenu
   sudo apt-get install -y lxterminal
