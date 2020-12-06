@@ -33,7 +33,7 @@ The custom desktop uses:
 - lxterminal
 - xfce4-notifyd (notifications)
 - tint2 (taskbar)
-- dolphin (file manager)
+- pcmanfm
 - lxappearance
 - nitrogen (wallpapers)
 - custom config for openbox, lightdm, nitogen and tint2
