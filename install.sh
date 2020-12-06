@@ -73,10 +73,12 @@ fi
 
 sudo apt-get install -y synaptic
 sudo apt-get install -y minecraft-pi
-sudo apt-get install -y sonic-pi
+echo "Installing sonic-pi"
+sudo apt-get install sonic-pi
 sudo apt-get install -y hping3
 sudo apt-get install -y nmap
-sudo apt-get install -y firefox-esr
+echo "Installing firefox"
+sudo apt-get install firefox-esr
 sudo apt-get install -y python-wxgtk3.0
 sudo apt-get install -y matchbox-keyboard
 
