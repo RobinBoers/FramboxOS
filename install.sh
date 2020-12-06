@@ -60,6 +60,7 @@ then
   sudo apt-get install -y lxtask
   sudo apt-get install -y elementary-xfce-icon-theme
 
+  sudo cp -R -f /home/pi/Frambox/.gtkrc-2.0-mine /home/pi/.gtkrc-2.0-mine
   sudo cp -R -f /home/pi/Frambox/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
   sudo cp -R -f /home/pi/Frambox/.config/ /home/pi/
   sudo cp -f /home/pi/Frambox/autostart_openbox.sh /home/pi/.config/openbox/autostart.sh
