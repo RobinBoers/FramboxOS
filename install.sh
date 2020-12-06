@@ -105,6 +105,7 @@ sudo cp -f /home/pi/Frambox/startes.sh /home/pi/startes.sh
 sudo cp -f /home/pi/Frambox/lxterminal.conf /home/pi/.config/lxterminal/lxterminal.conf
 
 echo "Installing gamelists and ports..."
+sudo cp -f /home/pi/Frambox/es_systems.cfg /opt/retropie/configs/all/emulationstation/es_systems.cfg
 sudo cp -R -f /home/pi/Frambox/roms/ /home/pi/RetroPie/
 sudo cp -R -f /home/pi/Frambox/gamelists/ /opt/retropie/configs/all/emulationstation/
 
@@ -119,8 +120,8 @@ sudo cp -f /home/pi/Frambox/hostname /etc/hostname
 echo "Setting up Raspbian menu..."
 sudo cp -R -f /home/pi/Frambox/applications /usr/share/raspi-ui-overrides/
 
-echo "Please choose a new password:"
-passwd
+echo "Please choose a new password: (for pi user)"
+passwd pi
 
 sudo cp -f /home/pi/Frambox/hosts /etc/hosts
 echo "Done. Please reboot now"
