@@ -29,13 +29,14 @@ The custom desktop uses:
 
 - lightdm
 - openbox
-- gedit
+- leafpad
 - lxterminal
 - xfce4-notifyd (notifications)
 - tint2 (taskbar)
-- pcmanfm (file manager)
+- dolphin (file manager)
 - lxappearance
 - nitrogen (wallpapers)
+- custom config for openbox, lightdm, nitogen and tint2
 
 ## Installation
 
