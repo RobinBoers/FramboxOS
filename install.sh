@@ -41,17 +41,20 @@ then
   sudo apt-get install -y lightdm
 
   sudo apt-get install -y openbox obconf openbox-menu obmenu
-  sudo apt-get install -y gedit
   sudo apt-get install -y lxterminal
+  sudo apt-get install -y leafpad  
   sudo apt-get install -y xfce4-notifyd
   sudo apt-get install -y tint2
+  sudo apt-get install -y dolphin
   # sudo apt-get install -y xcompmgr cairo-dock
-  sudo apt-get install -y pcmanfm
+  # sudo apt-get install -y pcmanfm
   sudo apt-get install -y lxappearance
   sudo apt-get install -y nitrogen
   sudo apt-get install -y xcompmgr
   sudo apt-get install -y pavucontrol
   sudo apt-get install -y volti
+  sudo apt-get install -y rofi
+  sudo apt-get install -y lxtask
 
   sudo cp -R -f /home/pi/Frambox/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
   sudo cp -R -f /home/pi/Frambox/.config/ /home/pi/
