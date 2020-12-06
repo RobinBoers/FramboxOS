@@ -62,6 +62,9 @@ then
   sudo cp -R -f /home/pi/Frambox/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
   sudo cp -R -f /home/pi/Frambox/.config/ /home/pi/
   sudo cp -f /home/pi/Frambox/autostart_openbox.sh /home/pi/.config/openbox/autostart.sh
+  
+  sudo chmod 777 /home/pi/.config/openbox/autostart.sh
+  sudo chmod 777 /home/pi/.config/openbox/menu.xml
 
 fi
 
