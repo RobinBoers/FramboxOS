@@ -20,7 +20,7 @@
 		<!-- This requires the presence of the 'openbox-menu' package to work -->
 		<separator/>
 		<!--<menu execute="/usr/bin/obamenu" id="applications-menu" label="Applications"/>-->
-		<item label="Application">
+		<item label="Applications">
 			<action name="Execute">
 				<execute>rofi -show drun</execute>
 			</action>
