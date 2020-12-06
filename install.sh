@@ -58,6 +58,7 @@ then
   sudo apt-get install -y volti
   sudo apt-get install -y rofi
   sudo apt-get install -y lxtask
+  sudo apt-get install -y elementary-xfce-icon-theme
 
   sudo cp -R -f /home/pi/Frambox/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
   sudo cp -R -f /home/pi/Frambox/.config/ /home/pi/
