@@ -63,9 +63,11 @@ then
   sudo cp -R -f /home/pi/Frambox/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
   sudo cp -R -f /home/pi/Frambox/.config/ /home/pi/
   sudo cp -f /home/pi/Frambox/autostart_openbox.sh /home/pi/.config/openbox/autostart.sh
-  
+
   sudo chmod 777 /home/pi/.config/openbox/autostart.sh
   sudo chmod 777 /home/pi/.config/openbox/menu.xml
+  sudo chmod 777 /home/pi/.config/tint2/tint2rc
+  sudo chmod 777 /home/pi/.config/lxterminal/lxterminal.conf
 
 fi
 
@@ -109,7 +111,8 @@ sudo cp -f /home/pi/Frambox/.bashrc /home/pi/.bashrc
 sudo cp -f /home/pi/Frambox/splashscreen.list /etc/splashscreen.list
 sudo cp -f /home/pi/Frambox/splashscreen.cfg /opt/retropie/configs/all/splashscreen.cfg
 sudo cp -f /home/pi/Frambox/startes.sh /home/pi/startes.sh
-sudo cp -f /home/pi/Frambox/lxterminal.conf /home/pi/.config/lxterminal/lxterminal.conf
+sudo cp -R -f /home/pi/Frambox/lxterminal.conf /home/pi/.config/lxterminal/lxterminal.conf
+sudo chmod 777 /home/pi/.config/lxterminal/lxterminal.conf
 
 echo "Installing gamelists and ports..."
 sudo cp -f /home/pi/Frambox/es_systems.cfg /opt/retropie/configs/all/emulationstation/es_systems.cfg
