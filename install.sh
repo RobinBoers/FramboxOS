@@ -64,7 +64,8 @@ then
   sudo apt-get install -y xarchiver
   sudo apt-get install -y lxrandr
 
-  sudo cp -R -f /home/pi/Frambox/.gtkrc-2.0-mine /home/pi/.gtkrc-2.0-mine
+  sudo cp -R -f /home/pi/Frambox/.gtkrc-2.0-mine /home/pi
+  sudo cp -R -f /home/pi/Frambox/.gtkrc-2.0 /home/pi
   sudo cp -R -f /home/pi/Frambox/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
   sudo cp -R -f /home/pi/Frambox/.config/ /home/pi/
   sudo cp -f /home/pi/Frambox/autostart_openbox.sh /home/pi/.config/openbox/autostart.sh
@@ -118,6 +119,7 @@ sudo cp -f /home/pi/Frambox/.bashrc /home/pi/.bashrc
 sudo cp -f /home/pi/Frambox/splashscreen.list /etc/splashscreen.list
 sudo cp -f /home/pi/Frambox/splashscreen.cfg /opt/retropie/configs/all/splashscreen.cfg
 sudo cp -f /home/pi/Frambox/startes.sh /home/pi/startes.sh
+sudo mkdir /home/pi/.config/lxterminal
 sudo cp -R -f /home/pi/Frambox/lxterminal.conf /home/pi/.config/lxterminal/lxterminal.conf
 sudo chmod 777 /home/pi/.config/lxterminal/lxterminal.conf
 
