@@ -32,6 +32,9 @@ then
   sudo apt-get install -y --no-install-recommends xorg lxde
   sudo apt-get install -y raspberrypi-ui-mods rpi-chromium-mods gvfs
 
+  echo "Setting up Raspbian menu..."
+  sudo cp -R -f /home/pi/Frambox/applications /usr/share/raspi-ui-overrides/
+
 # install FramboxDE
 elif [ "$?" = "1" ]
 then
@@ -116,9 +119,6 @@ sudo systemctl enable ssh
 echo "Setting up static IP and hostname..."
 sudo cp -f /home/pi/Frambox/dhcpcd.conf /etc/dhcpcd.conf
 sudo cp -f /home/pi/Frambox/hostname /etc/hostname
-
-echo "Setting up Raspbian menu..."
-sudo cp -R -f /home/pi/Frambox/applications /usr/share/raspi-ui-overrides/
 
 echo "Please choose a new password: (for pi user)"
 passwd pi
