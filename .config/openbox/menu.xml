@@ -3,7 +3,7 @@
 	<menu id="root-menu" label="Openbox 3">
 		<item label="Terminal">
 			<action name="Execute">
-				<execute>x-terminal-emulator</execute>
+				<execute>lxterminal</execute>
 			</action>
 		</item>
 		<item label="File Manager">
@@ -20,7 +20,7 @@
 		<!-- This requires the presence of the 'openbox-menu' package to work -->
 		<separator/>
 		<!--<menu execute="/usr/bin/obamenu" id="applications-menu" label="Applications"/>-->
-		<item label="Applications">
+		<item label="Application">
 			<action name="Execute">
 				<execute>rofi -show drun</execute>
 			</action>
