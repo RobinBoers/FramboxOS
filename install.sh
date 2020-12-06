@@ -31,6 +31,7 @@ then
 
   sudo apt-get install -y --no-install-recommends xorg lxde
   sudo apt-get install -y raspberrypi-ui-mods rpi-chromium-mods gvfs
+  # sudo apt-get install -y lxlauncher
 
   echo "Setting up Raspbian menu..."
   sudo cp -R -f /home/pi/Frambox/applications /usr/share/raspi-ui-overrides/
@@ -59,6 +60,8 @@ then
   sudo apt-get install -y rofi
   sudo apt-get install -y lxtask
   sudo apt-get install -y elementary-xfce-icon-theme
+  sudo apt-get install -y xarchiver
+  sudo apt-get install -y lxrandr
 
   sudo cp -R -f /home/pi/Frambox/.gtkrc-2.0-mine /home/pi/.gtkrc-2.0-mine
   sudo cp -R -f /home/pi/Frambox/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
