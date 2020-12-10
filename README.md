@@ -26,6 +26,8 @@ It also installs:
 
 My custom desktop is moved to it's own repo now. You can find it here: <br><https://github.com/RobinBoers/FramboxDesktop>
 
+It uses a static IP: 192.168.1.36
+
 ## Installation
 
 - Start with a fresh RetroPie image
