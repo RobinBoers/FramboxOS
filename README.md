@@ -3,16 +3,15 @@
 This script helps me to setup the my Raspberry Pi. It installs all the programs I use and sets all my preferences.<br><br>This is made for use with RetroPie.<br><br>
 It includes:
 
-- The PIXEL desktop (optional)
-- Custom Desktop Enviorment (optional)
+- The PIXEL desktop
 - A custom bashwelcometweak
 - My favorite splashscreens
 - My favorite themes (optional)
 - A option to open MCPI and Vice BASIC from emulationtation
 - Custom hostname
 - Enable SSH
-- Editted Raspbian menu
-- Terminal configuration / preferences
+- Clean Raspbian menu
+- LXTerminal color scheme
 
 It also installs:
 
@@ -23,20 +22,9 @@ It also installs:
 - Sonic Pi
 - Matchbox Keyboard
 - Firefox ESR
-- Synaptic Package Manager
+- Synaptic
 
-The custom desktop uses:
-
-- lightdm
-- openbox
-- leafpad
-- lxterminal
-- xfce4-notifyd (notifications)
-- tint2 (taskbar)
-- pcmanfm
-- lxappearance
-- nitrogen (wallpapers)
-- custom config for openbox, lightdm, nitogen and tint2
+My custom desktop is moved to it's own repo now. You can find it here: <https://github.com/RobinBoers/FramboxDesktop>
 
 ## Installation
 
