@@ -5,31 +5,31 @@ git clone --recursive --depth 1 --branch main https://github.com/RobinBoers/Fram
 git clone --recursive --depth 1 --branch master https://github.com/HerbFargus/retropie-splashscreens-extra /home/pi/RetroPie/splashscreens/retropie-extra
 
 echo "Installing requierd packages..."
-sudo apt-get install -y python3 idle3
-sudo apt-get install -y python3-pip
-sudo apt-get install -y dialog
+sudo apt install -y python3 idle3
+sudo apt install -y python3-pip
+sudo apt install -y dialog
 
 echo "Installing pixel..."
-sudo apt-get update
-sudo apt-get -y upgrade
+sudo apt update
+sudo apt -y upgrade
 
-sudo apt-get install -y --no-install-recommends xorg lxde
-sudo apt-get install -y raspberrypi-ui-mods rpi-chromium-mods gvfs
-# sudo apt-get install -y lxlauncher
+sudo apt install -y --no-install-recommends xorg lxde
+sudo apt install -y raspberrypi-ui-mods rpi-chromium-mods gvfs
+# sudo apt install -y lxlauncher
 
 echo "Setting up Raspbian menu..."
 sudo cp -R -f /home/pi/Frambox/applications /usr/share/raspi-ui-overrides/
 
-sudo apt-get install -y synaptic
-sudo apt-get install -y minecraft-pi
+sudo apt install -y synaptic
+sudo apt install -y minecraft-pi
 echo "Installing sonic-pi"
-sudo apt-get install sonic-pi
-sudo apt-get install -y hping3
-sudo apt-get install -y nmap
+sudo apt install sonic-pi
+sudo apt install -y hping3
+sudo apt install -y nmap
 echo "Installing firefox"
-sudo apt-get install firefox-esr
-sudo apt-get install -y python-wxgtk3.0
-sudo apt-get install -y matchbox-keyboard
+sudo apt install firefox-esr
+sudo apt install -y python-wxgtk3.0
+sudo apt install -y matchbox-keyboard
 
 echo "Installing themes..."
 
