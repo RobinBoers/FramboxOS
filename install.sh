@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Cloning repos..."
-git clone  https://github.com/RobinBoers/FramboxOS /home/pi/Frambox
+git clone --recursive --depth 1 --branch main https://github.com/RobinBoers/FramboxOS /home/pi/Frambox
 git clone --recursive --depth 1 --branch master https://github.com/HerbFargus/retropie-splashscreens-extra /home/pi/RetroPie/splashscreens/retropie-extra
 
 echo "Installing requierd packages..."
@@ -9,75 +9,16 @@ sudo apt-get install -y python3 idle3
 sudo apt-get install -y python3-pip
 sudo apt-get install -y dialog
 
-# Let the uset choose a desktop enviorment
-dialog --backtitle "Desktop Enviorment" --menu "Choose one:" 10 50 3 1 FramboxDE 2 Pixel 3 none
+echo "Installing pixel..."
+sudo apt-get update
+sudo apt-get -y upgrade
 
-# Return status of non-zero indicates cancel
-if [ "$?" != "0" ]
-then
-  dialog --title "Desktop Enviorment" --msgbox "Script was \ canceld" 10 50
+sudo apt-get install -y --no-install-recommends xorg lxde
+sudo apt-get install -y raspberrypi-ui-mods rpi-chromium-mods gvfs
+# sudo apt-get install -y lxlauncher
 
-# Install no desktop enviorment
-elif [ "$?" = "3" ]
-then
-  dialog --title "Desktop Enviorment" --infobox "Installing no Desktop Enviorment" 10 50
-  sleep 2
-
-# Install pixel
-elif [ "$?" = "2" ]
-then
-  sudo apt-get update
-  sudo apt-get upgrade
-
-  sudo apt-get install -y --no-install-recommends xorg lxde
-  sudo apt-get install -y raspberrypi-ui-mods rpi-chromium-mods gvfs
-  # sudo apt-get install -y lxlauncher
-
-  echo "Setting up Raspbian menu..."
-  sudo cp -R -f /home/pi/Frambox/applications /usr/share/raspi-ui-overrides/
-
-# install FramboxDE
-elif [ "$?" = "1" ]
-then
-  sudo apt-get update
-  sudo apt-get upgrade
-
-  sudo apt-get install -y lightdm
-  sudo apt-get install -y xorg xinit
-
-  sudo apt-get install -y openbox obconf openbox-menu obmenu
-  sudo apt-get install -y lxterminal
-  sudo apt-get install -y leafpad  
-  sudo apt-get install -y xfce4-notifyd
-  sudo apt-get install -y tint2
-  # sudo apt-get install -y dolphin
-  # sudo apt-get install -y xcompmgr cairo-dock
-  sudo apt-get install -y pcmanfm
-  sudo apt-get install -y lxappearance
-  sudo apt-get install -y nitrogen
-  sudo apt-get install -y xcompmgr
-  sudo apt-get install -y pavucontrol
-  sudo apt-get install -y volti
-  sudo apt-get install -y rofi
-  sudo apt-get install -y lxtask
-  sudo apt-get install -y elementary-xfce-icon-theme
-  sudo apt-get install -y xarchiver
-  sudo apt-get install -y lxrandr
-
-  sudo cp -R -f /home/pi/Frambox/.gtkrc-2.0-mine /home/pi
-  sudo cp -R -f /home/pi/Frambox/.gtkrc-2.0 /home/pi
-  sudo cp -R -f /home/pi/Frambox/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
-  sudo cp -R -f /home/pi/Frambox/.config/ /home/pi/
-  sudo cp -f /home/pi/Frambox/autostart_openbox.sh /home/pi/.config/openbox/autostart.sh
-
-  sudo chmod 777 /home/pi/.config/openbox/autostart.sh
-  sudo chmod 777 /home/pi/.config/openbox/menu.xml
-  sudo chmod 777 /home/pi/.config/tint2/tint2rc
-  sudo chmod 777 /home/pi/.config/lxterminal/lxterminal.conf
-
-  sudo cp -R -f /home/pi/Frambox/applications /usr/share/applications
-
-fi
+echo "Setting up Raspbian menu..."
+sudo cp -R -f /home/pi/Frambox/applications /usr/share/raspi-ui-overrides/
 
 sudo apt-get install -y synaptic
 sudo apt-get install -y minecraft-pi
