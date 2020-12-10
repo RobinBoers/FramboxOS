@@ -75,6 +75,8 @@ then
   sudo chmod 777 /home/pi/.config/tint2/tint2rc
   sudo chmod 777 /home/pi/.config/lxterminal/lxterminal.conf
 
+  sudo cp -R -f /home/pi/Frambox/applications /usr/share/applications
+
 fi
 
 sudo apt-get install -y synaptic
