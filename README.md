@@ -24,7 +24,7 @@ It also installs:
 - Firefox ESR
 - Synaptic
 
-My custom desktop is moved to it's own repo now. You can find it here: <https://github.com/RobinBoers/FramboxDesktop>
+My custom desktop is moved to it's own repo now. You can find it here: <br><https://github.com/RobinBoers/FramboxDesktop>
 
 ## Installation
 
