@@ -13,8 +13,15 @@ echo "Installing pixel..."
 sudo apt update
 sudo apt -y upgrade
 
-sudo apt install -y --no-install-recommends xorg lxde
-sudo apt install -y raspberrypi-ui-mods rpi-chromium-mods gvfs
+sudo apt install -y --no-install-recommends xorg lxde xcursor-themes
+
+# Pi-top OS + Firefox
+sudo apt install -y pt-ui-mods firefox-esr gvfs
+
+# Raspbian + Chromium
+# sudo apt install -y raspberrypi-ui-mods rpi-chromium-mods gvfs
+
+# Weird launcher, gonna be replaced with my own soon
 # sudo apt install -y lxlauncher
 
 echo "Setting up Raspbian menu..."
@@ -26,8 +33,6 @@ echo "Installing sonic-pi"
 sudo apt install sonic-pi
 sudo apt install -y hping3
 sudo apt install -y nmap
-echo "Installing firefox"
-sudo apt install firefox-esr
 sudo apt install -y python-wxgtk3.0
 sudo apt install -y matchbox-keyboard
 
